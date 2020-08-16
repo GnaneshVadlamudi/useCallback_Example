@@ -17,6 +17,11 @@ const App = () => {
     <div>
       <Age age={age} handleClick={handleClick} />
       <Instructions doSomething={doSomething} />
+      {/* inline useCallback like below
+      <Instructions doSomething={useCallback(() => {
+        return someValue
+      }, [someValue])} />
+      */}
     </div>
   )
 }
